@@ -12,6 +12,10 @@ open(IN,"<:utf8","prs.xml") or die "can't open prs.xml\n";
 
 my $dbh=DBI->connect("DBI:mysql:database=$db;host=$host","$usr","$pwd");
 
+$sth_enc=$dbh->prepare("set names utf8");
+$sth_enc->execute();
+$sth_enc->finish();
+
 #vnum, number, month, year, title, feature, authid, page, 
 
 $sth11=$dbh->prepare("CREATE TABLE article(title varchar(500), 

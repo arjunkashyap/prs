@@ -39,6 +39,7 @@ include("connect.php");
 
 $db = mysql_connect("localhost",$user,$password) or die("Not connected to database");
 $rs = mysql_select_db($database,$db) or die("No Database");
+mysql_query("set names utf8");
 
 $month_name = array("1"=>"ಜನವರಿ","2"=>"ಫೆಬ್ರವರಿ","3"=>"ಮಾರ್ಚ್","4"=>"ಏಪ್ರಿಲ್","5"=>"ಮೇ","6"=>"ಜೂನ್","7"=>"ಜುಲೈ","8"=>"ಆಗಸ್ಟ್‍","9"=>"ಸೆಪ್ಟೆಂಬರ್","10"=>"ಅಕ್ಟೋಬರ್","11"=>"ನವೆಂಬರ್","12"=>"ಡಿಸೆಂಬರ್");
 
