@@ -17,7 +17,7 @@
 	<div class="header">
 		<img src="images/jss_logo.png" alt="JSS Logo" class="logo"/>
 		<div class="gov">
-			<p>ಪ್ರಸಾದ</p>
+			<p><a href="../index.php">ಪ್ರಸಾದ</a></p>
 			<p>ಜಗದ್ಗುರು ಶ್ರೀ ಶಿವರಾತ್ರೀಶ್ವರ ಮಹಾವಿದ್ಯಾಪೀಠ</p>
 		</div>
 	</div>
