@@ -49,7 +49,7 @@ echo "<div class=\"col2 largeSpace\">
 <ul>
 ";
 
-$query = "select * from author order by authid";
+$query = "select * from author where authorname not like '(%' order by TRIM(LEADING '&#8220;' FROM authorname)";
 $result = mysql_query($query);
 
 $num_rows = mysql_num_rows($result);
